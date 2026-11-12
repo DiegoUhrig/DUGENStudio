@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DUGEN Studio · Diseño y desarrollo web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F5F0;--surface:#FFFFFF;--text:#14120B;--muted:#5C5A52;--gold:#8F6B12;--gold2:#C9A227;--border:#E3DFD3;--dark:#161616;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0D0D0D;--surface:#161616;--text:#F2EFE6;--muted:#A8A8A8;--gold:#D4AF37;--gold2:#C9A227;--border:#2A2A2A}}
+:root[data-theme="dark"]{--bg:#0D0D0D;--surface:#161616;--text:#F2EFE6;--muted:#A8A8A8;--gold:#D4AF37;--gold2:#C9A227;--border:#2A2A2A}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--text);font-family:'Montserrat','Helvetica Neue',Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header{text-align:center;padding:48px 0 32px}
+.emblem{width:132px;height:auto;margin:0 auto 18px;display:block}
+h1{font-size:2rem;letter-spacing:.18em;font-weight:700;color:var(--gold)}
+.sub{letter-spacing:.5em;font-size:.8rem;color:var(--muted);margin-top:2px;padding-left:.5em}
+.tag{margin:20px auto 0;max-width:460px;color:var(--muted);font-size:.98rem}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;font-size:.9rem;text-decoration:none;border:1.5px solid var(--gold);transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn.main{background:var(--gold);color:var(--bg)}
+.btn.ghost{color:var(--gold)}
+section{padding:36px 0}
+h2{font-size:1.1rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.lead{color:var(--muted);font-size:.92rem;margin-bottom:22px}
+.grid{display:grid;gap:16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.thumb{height:150px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1b1b1b,#3a3a3a 55%,#6b5a1e)}
+.thumb svg{width:56px;height:56px;opacity:.9}
+.body{padding:16px 18px 18px}
+.body h3{font-size:1.02rem;margin-bottom:2px}
+.chips{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.body p{font-size:.9rem;color:var(--muted)}
+.body a{display:inline-block;margin-top:12px;font-size:.88rem;font-weight:600;color:var(--gold);text-decoration:none}
+.services{display:grid;gap:12px}
+.svc{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.svc i{flex:none;width:12px;height:12px;margin-top:7px;background:var(--gold2);transform:rotate(45deg)}
+.svc b{display:block;font-size:.95rem}
+.svc span{font-size:.86rem;color:var(--muted)}
+.contact{text-align:center;border:1px solid var(--gold);border-radius:20px;padding:34px 20px;background:var(--surface)}
+.contact p{color:var(--muted);margin:8px 0 20px}
+footer{text-align:center;padding:28px 0 36px;font-size:.78rem;color:var(--muted)}
+@media(min-width:620px){.grid{grid-template-columns:1fr 1fr}.services{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <svg class="emblem" viewBox="80 20 440 460" aria-hidden="true">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3D27A"/><stop offset=".5" stop-color="#C9A227"/><stop offset="1" stop-color="#8F6B12"/></linearGradient></defs>
+    <polygon points="300,40 500,250 300,460 100,250" fill="#161616" stroke="url(#g)" stroke-width="8"/>
+    <polygon points="300,68 472,250 300,432 128,250" fill="none" stroke="#5A5A5A" stroke-width="2"/>
+    <text x="300" y="196" text-anchor="middle" font-family="'Courier New',monospace" font-size="30" font-weight="700" fill="#8A8A8A">&lt;/&gt;</text>
+    <text x="300" y="262" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="54" font-weight="700" letter-spacing="6" fill="url(#g)">DUGEN</text>
+    <text x="300" y="308" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="22" letter-spacing="12" fill="#B5B5B5">STUDIO</text>
+  </svg>
+  <h1>DUGEN</h1>
+  <div class="sub">STUDIO</div>
+  <p class="tag">Diseñamos y desarrollamos sitios web que hacen crecer tu negocio.</p>
+  <div class="cta">
+    <a class="btn main" href="#proyectos">Ver proyectos</a>
+    <a class="btn ghost" href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <p class="lead">Nuestro trabajo más reciente y lo que viene.</p>
+  <div class="grid">
+    <article class="card"><div class="thumb"><svg viewBox="0 0 60 60"><polygon points="30,3 57,30 30,57 3,30" fill="none" stroke="#D4AF37" stroke-width="3"/></svg></div>
+      <div class="body"><div class="chips">Tienda online · Catálogo</div><h3>Urban SHOP</h3><p>Tienda de perfumes árabes masculinos con catálogo, control de stock y pedidos por WhatsApp.</p><a href="https://urban-shop-etpl.onrender.com/" target="_blank" rel="noopener">Ver sitio →</a></div></article>
+    <article class="card"><div class="thumb"><svg viewBox="0 0 60 60"><polygon points="30,3 57,30 30,57 3,30" fill="none" stroke="#D4AF37" stroke-width="3"/></svg></div>
+      <div class="body"><div class="chips">Próximamente</div><h3>Nuevo proyecto</h3><p>Estamos trabajando en algo nuevo. Pronto lo vas a ver acá.</p></div></article>
+    <article class="card"><div class="thumb"><svg viewBox="0 0 60 60"><polygon points="30,3 57,30 30,57 3,30" fill="none" stroke="#D4AF37" stroke-width="3"/></svg></div>
+      <div class="body"><div class="chips">Próximamente</div><h3>Nuevo proyecto</h3><p>Estamos trabajando en algo nuevo. Pronto lo vas a ver acá.</p></div></article>
+    <article class="card"><div class="thumb"><svg viewBox="0 0 60 60"><polygon points="30,3 57,30 30,57 3,30" fill="none" stroke="#D4AF37" stroke-width="3"/></svg></div>
+      <div class="body"><div class="chips">Próximamente</div><h3>Nuevo proyecto</h3><p>Estamos trabajando en algo nuevo. Pronto lo vas a ver acá.</p></div></article>
+  </div>
+</section>
+
+<section>
+  <h2>Servicios</h2>
+  <p class="lead">Del diseño a la publicación, todo en un solo lugar.</p>
+  <div class="services">
+    <div class="svc"><i></i><div><b>Diseño web</b><span>Interfaces claras, modernas y con tu identidad.</span></div></div>
+    <div class="svc"><i></i><div><b>Desarrollo a medida</b><span>Sitios rápidos, adaptados a celular y listos para crecer.</span></div></div>
+    <div class="svc"><i></i><div><b>Tiendas y landings</b><span>Páginas pensadas para vender y captar clientes.</span></div></div>
+    <div class="svc"><i></i><div><b>Mantenimiento</b><span>Actualizaciones y soporte después del lanzamiento.</span></div></div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="contact">
+    <h2>¿Hablamos?</h2>
+    <p>Cuéntanos tu idea y te respondemos con una propuesta.</p>
+    <a class="btn main" href="https://instagram.com/dugenstudio" target="_blank" rel="noopener">Escribinos por Instagram · @dugenstudio</a>
+  </div>
+</section>
+
+<footer>© 2026 DUGEN Studio · Diseño y desarrollo web</footer>
+</div>
+</body>
+</html>
